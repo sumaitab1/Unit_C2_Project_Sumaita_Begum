@@ -4,33 +4,34 @@
     <title>Comments and Attributes</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-  
     <script type="module" src="script.js"></script>
   </head>
-
-  <a href="/">Home</a>
-      <a href="page2.html" aria-current="page">Formatting Tags</a>
-      <a href="page3.html" aria-current="page">Comments and Attributes</a>
-    
-
-      <h1>Comments and Attributes </h1>
-
-    <p> <li> Comments are hidden within n HTML document. In order to create an HTML comment you must use &lt!--&gt; before the comment text and --> after it. 
-      
-        <li> Attributes are codes that appear within a tag that modify it in somne way. The general syntax for this attribute is 
-         &lttagName attributeName = “name you want to put in”> content &lt  /tagName       &gt; (general attribute text example)  
-              <ul> 
-                <li> &ltimage src="happyface.jpg"&gt;
-                  <li> &ltp style=”color:red”&gt; (Which makes text appear red)
-              </ul>
-          <li> For Links the anchor element is used to insert a hyperlink to another page or location on the same page. Links are considered to be <b> inline elements </b>. To locat the link you need the href attribute (HyperText Reference)
-            <ul> 
-              <li> &lta href ="pathToFile"&gt; Link Text &lt/a&gt;
-                <li> For absolute links we use: &lta href="insert link name"&gt; Google &lt/a&gt;
-                  <li> For relative or internal links (same folder where web page is located/somewhere in the file structure) we used: &lta href= "/index.html"&gt; Home Page &lt/a&gt;
-                    <li> To let users download a file we use &lta download="filename"&gt;
-                      <li> To specify a specific plane within the page we use the target tag which is: &lta href= "URL" target ="blank"&gt; Blank is just an example of target tags. There is also the _top tag which opens the target link at the top of the page the self tag which opens the link within the iframe and the parent tag which opens the link within the parent of the current frame.
-            <li> You can also embed images (inline element). To locate the image you paste the the link into the src attribute. The full example code for this is &lt image src="happyface.jpg"alt ="smileyface"&gt; For the alt part of the code, it is a attribute used for visually impaired users. With this attribute screen readers will be able to describe the image to the user making it accessible to all people. 
-              <li> You can also adjust the sizing of your image using: &lt img src="File" width="#" &gt; (You can use width, height or both!) </li></ol></p>
   <body>
     <nav>
+      
+      <a href="page2.html"> Previous Page!</a>
+      <a href="page4.html">Next Page!</a>
+    </nav>
+    
+    <h1>Comments</h1>
+
+    <p>In HTML, comments are hidden within the code and do not appear on the webpage. They are useful for developers to add notes or explanations within the code itself. To create a comment in HTML, you must wrap the comment text inside the <code>&lt;!-- comment text --&gt;</code> syntax.</p>
+    
+    <p><b><i>Here is an example of a comment:</i></b></p> 
+    <ul>
+      <li>&lt;!-- This is a comment --&gt;</li>
+      <li>&lt;a href="example.html"&gt;Example Link&lt;/a&gt;</li>
+    </ul>
+
+    <h1>Attributes</h1>
+    <p>Attributes in HTML are used to provide additional information about an element. They appear inside the opening tag of an element and modify the behavior or appearance of the element. Attributes are written in the format <code>&lt;tagName attributeName="value"&gt;</code>, where <code>attributeName</code> is the name of the attribute, and <code>value</code> is the value assigned to it.</p>
+
+    <p><b><i>Here are some examples:</i></b></p>
+    <ul>
+      <li>&lt;img src="happyface.jpg"&gt;</li>
+      <li>&lt;p style="color:red"&gt; (Which makes text appear red) &lt;/p&gt;</li>
+<p><a href="index.html">Return to Home Page</a> </p>
+      
+    </ul>
+  </body>
+</html>
