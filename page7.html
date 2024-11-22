@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Iframes</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <a href="page5.html" aria-current="page">Previous Page!</a>
+    <a href="page8.html" aria-current="page">Next Page!</a>
+
+    <h1>iFrames</h1>
+    <ol>
+      <li>
+        iFrames allow one HTML document to display the contents of other HTML documents. We use the &lt;iframe&gt; element to accomplish this. The HTML iframe syntax is:  
+        <code>&lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;</code>
+        <ul>
+          <li>The src attribute is used to determine the path to the HTML document page that will provide the contents of the iframe.</li>
+        </ul>
+      </li>
+      <li>
+        To adjust the height and width of the iframe window, we use:  
+        <ul>
+          <li>
+            <code>&lt;iframe src="url" title="description" height="&lt;b&gt;#&lt;/b&gt;" width="&lt;b&gt;%&lt;/b&gt;"&gt;&lt;/iframe&gt;</code>
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+    <p><b><i>Here is an example of what an iframe would look like... (in this example, I will be linking Tetris!)</i></b></p>
+
+    <iframe src="https://tetris.com/play-tetris" title="Tetris"></iframe>
+
+    <p><b><i>This is what the code for this would look like:</i></b></p>
+
+    <p>
+      <code>&lt;iframe src="https://tetris.com/play-tetris" title="Tetris"&gt;<br>
+        &lt;/iframe&gt;</code>
+      
+    </p>
+  </body>
+</html>
