@@ -1,9 +1,7 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Connecting Links to HTML</title>
+    <title>Headings and Paragraphs</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <script type="module" src="script.js"></script>
@@ -12,19 +10,31 @@
     <a href="page4.html" aria-current="page">Previous Page!</a>
     <a href="page6.html" aria-current="page">Next Page!</a>
 
-<h1> Connecting Links into HTML </h1>
-<li> For Links the anchor element is used to insert a hyperlink to another page or location on the same page. Links are considered to be <b> inline elements </b>. To locate the link you need the href attribute (HyperText Reference)
-  <ul> 
-    <li> &lta href ="pathToFile"&gt; Link Text &lt/a&gt;
-      <li> For absolute links we use: &lta href="insert link name"&gt; Google &lt/a&gt;
-        <li> For relative or internal links (same folder where web page is located/somewhere in the file structure) we used: &lta href= "/index.html"&gt; Home Page &lt/a&gt;
-          <li> To let users download a file we use &lta download="filename"&gt;
-            <li> To specify a specific plane within the page we use the target tag which is: &lta href= "URL" target ="blank"&gt; Blank is just an example of target tags. There is also the _top tag which opens the target link at the top of the page the self tag which opens the link within the iframe and the parent tag which opens the link within the parent of the current frame.
-  <li> You can also embed images (inline element). To locate the image you paste the the link into the src attribute. The full example code for this is &lt image src="happyface.jpg"alt ="smileyface"&gt; For the alt part of the code, it is a attribute used for visually impaired users. With this attribute screen readers will be able to describe the image to the user making it accessible to all people. 
-    <li> You can also adjust the sizing of your image using: &lt img src="File" width="#" &gt; (You can use width, height or both!) </li></ol></p>
-   
-    <a href="index.html" aria-current="page">Return to Home Page</a>
+    <h1>Headings and Paragraphs</h1>
 
+    <p>
+      Headings are used to create an outline structure on a web page. There are only 6 heading types from <b>h1</b> to <b>h6</b>. For a heading tag, we use: &lt;h#&gt;
+    </p>
+    
+    <p>
+      Paragraph tags are the workhorse tags of web design. Most blocks of text use paragraphs for formatting, so remembering this tag is crucial. For a paragraph tag, we use &lt;p&gt;. However, if you would like to include a line break, use the tag &lt;br&gt; to start a line break.
+    </p>
+
+    <p>
+      If you would like a line between the tags, use the tag &lt;hr&gt;, which is essentially just an empty tag. If you would like to preserve multiple spaces or line breaks, you can use the preformatted text &lt;pre&gt; tag. This tag is a <b>block-level element</b>.
+    </p>
+
+    <ul>
+      <li>Here is an example of how a heading tag would look in your code: <code>&lt;h#&gt; Hello World! &lt;/h#&gt;</code></li>
+      <li>However, a paragraph tag would look more like this: <code>&lt;p&gt; This is an example of a paragraph tag &lt;/p&gt;</code></li>
+    </ul>
+
+    <p><b><i>Resulting in the following:</i></b></p>
+    <p>_________________________________________________________________________________________________</p>
+    
+    <h3>Lorem Ipsum</h3>
+    <p>Lorem ipsum dolor sit amet. Ut quia omnis cum soluta dolor est ratione beatae ut nemo unde ut pariatur maiores! Et quia consequatur et reiciendis dolores ea ratione minus id pariatur necessitatibus. A similique officia aut Quis blanditiis quo blanditiis eius non asperiores facilis vel nemo totam et architecto eius. Quo earum voluptas ex ullam beatae vel modi dolor et nihil dolor ut inventore porro?</p>
+
+    <a href="index.html" aria-current="page">Return to Home Page</a>
   </body>
-  </html>
-  
+</html>

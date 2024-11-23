@@ -1,71 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Formatting Tags; Basics of HTML</title>
+    <title>Introduction to HTML</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
-
   <body>
-    <nav>
-      <a href="index.html">Previous Page!</a>
-      <a href="page3.html">Next Page!</a>
-    </nav>
-    <main>
-      <h2>Formatting Tags</h2>
-      <p>
-        HTML has two types of body elements: block-level elements and inline elements. 
-        <b><i>Block-level elements</i></b> will automatically appear on separate lines in your code, 
-        while <b><i>inline elements</i></b> appear horizontally so that the text does not start a new line. The following tags are examples of inline elements!
-      </p>
-      
-      <ul>
-        <li><b>&lt;b&gt;</b> this tag makes text appear bold &lt;/b&gt;</li>
-        <li><b>&lt;strong&gt;</b> this tag is similar to the bold tag and also makes text appear bold &lt;/strong&gt;</li>
-        <li><b>&lt;i&gt;</b> <i>this tag makes text appear italicized</i> &lt;/i&gt;</li>
-        <li><b>&lt;em&gt;</b> <em>this tag also makes text appear italicized</em> &lt;/em&gt;</li>
-        <li><b>&lt;mark&gt;</b> <mark>With this tag, text will appear highlighted</mark> &lt;/mark&gt;</li>
-        <li><b>&lt;small&gt;</b> <small>This tag makes text appear small</small> &lt;/small&gt;</li>
-        <li><b>&lt;del&gt;</b> <del>With this tag, text will appear crossed out</del> &lt;/del&gt;</li>
-        <li><b>&lt;ins&gt;</b> <ins>This tag makes text appear underlined</ins> &lt;/ins&gt;</li>
-        <li><b>&lt;sub&gt;</b> <sub>This tag makes text appear as a subscript</sub> &lt;/sub&gt; For example, H<sub>2</sub>O</li>
-        <li><b>&lt;sup&gt;</b> <sup>This tag makes text appear as a superscript</sup> &lt;/sup&gt;</li>
-      </ul>
+    <a href="index.html" aria-current="page">Previous Page!</a>
+    <a href="page3.html" aria-current="page">Next Page!</a>
 
-      <h3>Structural Tags</h3>
-      <p>There are also list elements <b>(block level elements)</b> which consist of:</p>
-      <ul>
-        <li>&lt;ol&gt; This tag creates an ordered list with numbers. However, the tag &lt;ul&gt; creates an unordered list with bullet points instead.</li>
-      </ul>
-      
-      <p><b>Note:</b> Remember to always put <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> first, followed by the <code>&lt;li&gt;</code> tag, or else your code will appear incorrect when passed through a validator and the bullet points/numbers you wanted will not appear.</p>
+    <h1> What is HTML? </h1>
+    <p> HTML, also known as <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage, is the backbone of the World Wide Web. Created by Tim Berners-Lee in 1989, it is a language that helps format texts. In HTML, we use angle brackets as symbols to start and end our tags.</p>
+    <p> <b> What do we need to start an HTML webpage? </b></p>
+    <ol>
+      <li> A doctype declaration </li>
+      <li> An HTML tag beginning and ending the page </li>
+      <li> A head tag that holds the page's metadata (learn about metadata in lesson #) </li>
+      <li> Title Tag; shows up on web browser Tabs </li>
+      <li> A body tag </li>
+    </ol>
 
-      <p>If you are curious about what an unordered list would look like, look above! The list of formatting tags shows different tags using the <code>&lt;ul&gt;</code> tag. Below is an example of an ordered list.</p>
-      
-      <ol>
-        <li>This</li>
-        <li>Is</li>
-        <li>An</li>
-        <li>Ordered</li>
-        <li>List</li>
-      </ol>
-      
-      <p><b><i>The code would look something like the following...</i></b></p>
+    <b> Here is what the code would look like: </b>
+    <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;title&gt; Title of Web Page &lt;/title&gt;
+      &lt;body&gt; (This is the tag to start your code) &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
 
-      <pre><code>&lt;ol&gt;</code></pre>
-      <pre><code>&lt;li&gt; Hello &lt;/li&gt;</code></pre>
-      <pre><code>&lt;li&gt; World! &lt;/li&gt;</code></pre>
-      <pre><code>&lt;/ol&gt;</code></pre>
-
-      <p> <b> or...</b></p>
-      <pre><code>&lt;ul&gt;</code></pre>
-      <pre><code>&lt;li&gt; Hello &lt;/li&gt;</code></pre>
-      <pre><code>&lt;li&gt; World! &lt;/li&gt;</code></pre>
-      <pre><code>&lt;/ul&gt;</code></pre>
-
-      <a href="index.html">Return to Home Page</a>
-    </main>
+    <p> <b>After following all these steps, you can move on to Lesson 2!</b></p>
   </body>
 </html>

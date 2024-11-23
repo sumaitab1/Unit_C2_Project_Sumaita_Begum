@@ -1,82 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>How to Create Tables using HTML</title>
+    <title>HTML Links and Images</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <script type="module" src="script.js"></script>
-    <style>
-      table, th, td {
-        border: 1px solid pink;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <a href="page5.html" aria-current="page">Previous Page!</a>
     <a href="page7.html" aria-current="page">Next Page!</a>
-
-    <h1>Creating Tables</h1> 
+    
+    <h1>HTML Links and Images</h1>
+    <p> Use the following examples to help you include a link to your code. Each example is created based off the type of link used from basic to downloadable all the way to images and more! </p>
+    
+    <!-- Basic Link -->
     <ol> 
-      <li> Tables allow web developers to organize and arrange their data collected into a grid-like structure. For tables, we use the following tags: 
-        <ul> 
-        
-          <li>&lt;table&gt; (This tag creates the actual table)</li>
-          <li>&lt;tr&gt; (This tag creates the row)</li>
-          <li>&lt;th&gt; (This tag creates the heading cell)</li>
-          <li>&lt;td&gt; (This tag creates a data cell)</li>  
-        </ul>
+      <li>
+        <p><b><i>Basic Link Syntax:</i></b></p>
+        <p>
+          A basic link creates a clickable text or element that navigates to a specified location.
+        </p>
+        <code>&lt;a href="pathToFile"&gt;Link Text&lt;/a&gt;</code>
+        <p>Example:</p>
+        <a href="file.html">Visit Local File</a>
       </li>
-      <li> To create borders in HTML5, you will have to use CSS.</li>
-      <li> In order to change the table and cell sizes, we use the following:
-        <ul>
-          <li>table {insert width and height in pixels}</li>
-          <li>For cell sizes: th, td {insert width and height in pixels}</li>
-          <li>For colspan and rowspan, we use &lt;th colspan="#"&gt; or &lt;th rowspan="#"&gt;</li>
-      
-        </ul>
-      
+
+      <!-- Absolute Link -->
+      <li>
+        <p><b><i>Absolute Link (external):</i></b></p>
+        <p>
+          An absolute link directs users to a specific webpage on the internet. 
+        </p>
+        <code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code>
+        <p>Example:</p>
+        <a href="https://www.google.com" target="_blank">Google</a>
+      </li>
+
+      <!-- Relative/Internal Link -->
+      <li>
+        <p><b><i>Relative/Internal Link:</i></b></p>
+        <p>
+          A relative link connects to a file within the same website or a folder.
+        </p>
+        <code>&lt;a href="/index.html"&gt;Home Page&lt;/a&gt;</code>
+        <p>Example:</p>
+        <a href="/index.html">Home Page</a>
+      </li>
+
+      <!-- Downloadable Link -->
+      <li>
+        <p><b><i>Downloadable Link:</i></b></p>
+        <p>
+          A downloadable link lets users download a file and insert it into their webpage instead of opening it in the browser.
+        </p>
+        <code>&lt;a href="example-file.txt" download="example-file"&gt;Download File&lt;/a&gt;</code>
+        <p>Example:</p>
+        <a href="example-file.txt" download="example-file">Download File</a>
+      </li>
+    </ol> 
+    
+    <!-- Images Section -->
+    <h2>Images</h2>
+    <ol>
+      <!-- Embedding an Image -->
+      <li>
+        <p><b><i>Basic Image Syntax:</i></b></p>
+        <p>
+          Images are added to webpages using the <code>img</code> tag, which requires the
+          <code>src</code> attribute to specify the image source and the <code>alt</code> attribute
+          for accessibility.
+        </p>
+        <code>&lt;img src="example.jpg" alt="Description of your image"&gt;</code>
+        <p>Example:</p>
+        <img src="https://cdn.sanriowiki.com/thumb/3/38/My_Melody_happy.png/200px-My_Melody_happy.png" alt="My Melody" />
+      </li>
+
+      <!-- Image Accessibility -->
+      <li>
+        <p><b><i>Image Accessibility:</i></b></p>
+        <p>
+          The <code>alt</code> attribute provides a description for the image, making it accessible
+          to visually impaired users by allowing screen readers to describe the image content.
+        </p>
+      </li>
+
+      <!-- Adjusting Image Sizing -->
+      <li>
+        <p><b><i>Adjusting Image Size:</i></b></p>
+        <p>
+          Use the <code>width</code> and <code>height</code> attributes to control the size of an image. 
+          Specifying both ensures consistent scaling.
+        </p>
+        <code>&lt;img src="File" width="#" height="#"&gt;</code>
+        <p>Example:</p>
+        <img src="https://cdn.sanriowiki.com/thumb/3/38/My_Melody_happy.png/200px-My_Melody_happy.png" alt="My Melody" width="100" height="100" />
+        <p> By specifying size I was able to make the image smaller</p>
       </li>
     </ol>
-    <p> ____________________________________________________________________________________________________________________________</p>
 
-    <p><b><i>Here is an example of what a table would look like:</i></b></p>
-
-    <table>
-      <tr>
-        <th>Column #1</th>
-        <th>Column #2</th>
-        <th>Column #3</th>
-        <th>Column #4</th>
-      </tr>
-      <tr>
-        <td>Row Cell #1</td>
-        <td>Row Cell #2</td>
-        <td>Row Cell #3</td>
-        <td>Row Cell #4</td>
-      </tr>
-    </table>
-
-    <p><b>NOTE: Don't forget to put the style code to choose the thickness of your lines and color. I like pink, so the example above I used pink!</b></p>
-
-    <p><b><i>Here is an example of what the code for a table similar to the example would look like:</i></b></p>
-<code>
-    <p>&lt;table&gt;</p>
-    <p>&lt;tr&gt;</p>
-    <p>&lt;th&gt;Column #1&lt;/th&gt;</p>
-    <p>&lt;th&gt;Column #2&lt;/th&gt;</p>
-    <p>&lt;th&gt;Column #3&lt;/th&gt;</p>
-    <p>&lt;th&gt;Column #4&lt;/th&gt;</p>
-    <p>&lt;/tr&gt;</p>
-    <p>&lt;tr&gt;</p>
-    <p>&lt;td&gt;Row Cell #1&lt;/td&gt;</p>
-    <p>&lt;td&gt;Row Cell #2&lt;/td&gt;</p>
-    <p>&lt;td&gt;Row Cell #3&lt;/td&gt;</p>
-    <p>&lt;td&gt;Row Cell #4&lt;/td&gt;</p>
-    <p>&lt;/tr&gt;</p>
-    <p>&lt;/table&gt;</p>
-  </code>
-
-    <a href="index.html" aria-current="page">Return to Home Page</a>
+    <a href="index.html" aria-current="page">Return Home</a>
   </body>
 </html>

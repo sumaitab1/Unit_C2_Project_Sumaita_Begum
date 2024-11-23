@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Heading Elements</title>
+    <title>Iframes</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
-  <a href="page7.html" aria-current="page">Previous Page!</a>
-    <a href="page10.html" aria-current="page">Next Page!</a>
-<h1> Head Elements</h1>
-  <body> 
-    
-    <li> What should go in the head? There are five attributes that should be included in the head of your web page 
-        <ul> 
-          <li> Title: shows up at the top of the web page window or tab
-            <li> Metadata: invisible to viewers, but visible to web crawlers
-              <li> Styles 
-                <li> Scripts 
-                  <li> Links
-                    <p> <b> <i> Here is an example of what this would look like...</i></b></p>
-          </ol>
-          <code>
-          <p>&lt;!DOCTYPE html&gt;</p>
-          <p>&lt;html lang="en"&gt;</p>
-          <p>&lt;head&gt;</p>
-          <p>    &lt;title&gt;Example Web Page&lt;/title&gt;</p>
-          <p>    &lt;meta charset="UTF-8"&gt;</p>
-          <p>    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-          <p>    &lt;meta name="description" content="This is an example web page."&gt;</p>
-          <p>    &lt;style&gt;</p>
-          <p>        body {</p>
-          <p>            font-family: Arial, sans-serif;</p>
-          <p>        }</p>
-          <p>    &lt;/style&gt;</p>
-          <p>    &lt;script&gt;</p>
-          <p>        console.log('Hello, world!');</p>
-          <p>    &lt;/script&gt;</p>
-          <p>&lt;/head&gt;</p>
-          <p>&lt;body&gt;</p>
-          <p>    &lt;h1&gt;Welcome to the Example Web Page&lt;/h1&gt;</p>
-          <p>&lt;/body&gt;</p>
-          <p>&lt;/html&gt;</p>
-        </code>
-&lt;/html&gt;
+  <body>
+    <a href="page7.html" aria-current="page">Previous Page!</a>
+    <a href="page9.html" aria-current="page">Next Page!</a>
 
+    <h1>iFrames</h1>
+    <ol>
+      <li>
+        iFrames allow one HTML document to display the contents of other HTML documents. We use the &lt;iframe&gt; element to accomplish this. The HTML iframe syntax is:  
+        <code>&lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;</code>
+        <ul>
+          <li>The src attribute is used to determine the path to the HTML document page that will provide the contents of the iframe.</li>
+        </ul>
+      </li>
+      <li>
+        To adjust the height and width of the iframe window, we use:  
+        <ul>
+          <li>
+            <code>&lt;iframe src="url" title="description" height="&lt;b&gt;#&lt;/b&gt;" width="&lt;b&gt;%&lt;/b&gt;"&gt;&lt;/iframe&gt;</code>
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+    <p><b><i>Here is an example of what an iframe would look like... (in this example, I will be linking 2048!)</i></b></p>
+
+    <iframe src="https://2048game.com/#google_vignette" title="2048"></iframe>
+
+    <p><b><i>This is what the code for this would look like:</i></b></p>
+
+    <code>&lt;iframe src="https://2048game.com/#google_vignette" title="2048"&gt;<br>
+    &lt;/iframe&gt;</code>
+
+    <a href="index.html">Return to Home Page</a>
   </body>
+</html>
+
