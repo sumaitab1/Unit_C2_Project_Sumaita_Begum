@@ -1,83 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> Tags; Basics of HTML</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="styles.css">
+    <title>Comments and Attributes</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+  
     <script type="module" src="script.js"></script>
   </head>
 
+  <a href="/">Home</a>
+      <a href="page2.html" aria-current="page">Formatting Tags</a>
+      <a href="page4.html" aria-current="page">Headings and Paragraphs</a>
+    
+
+      <h1>Comments and Attributes </h1>
+
+    <p> <li> Comments are hidden within n HTML document. In order to create an HTML comment you must use &lt!--&gt; before the comment text and --> after it. 
+      
+        <li> Attributes are codes that appear within a tag that modify it in somne way. The general syntax for this attribute is 
+         &lttagName attributeName = “name you want to put in”> content &lt  /tagName       &gt; (general attribute text example)  
+              <ul> 
+                <li> &ltimage src="happyface.jpg"&gt;
+                  <li> &ltp style=”color:red”&gt; (Which makes text appear red)
+              </ul>
+          <li> For Links the anchor element is used to insert a hyperlink to another page or location on the same page. Links are considered to be <b> inline elements </b>. To locat the link you need the href attribute (HyperText Reference)
+            <ul> 
+              <li> &lta href ="pathToFile"&gt; Link Text &lt/a&gt;
+                <li> For absolute links we use: &lta href="insert link name"&gt; Google &lt/a&gt;
+                  <li> For relative or internal links (same folder where web page is located/somewhere in the file structure) we used: &lta href= "/index.html"&gt; Home Page &lt/a&gt;
+                    <li> To let users download a file we use &lta download="filename"&gt;
+                      <li> To specify a specific plane within the page we use the target tag which is: &lta href= "URL" target ="blank"&gt; Blank is just an example of target tags. There is also the _top tag which opens the target link at the top of the page the self tag which opens the link within the iframe and the parent tag which opens the link within the parent of the current frame.
+            <li> You can also embed images (inline element). To locate the image you paste the the link into the src attribute. The full example code for this is &lt image src="happyface.jpg"alt ="smileyface"&gt; For the alt part of the code, it is a attribute used for visually impaired users. With this attribute screen readers will be able to describe the image to the user making it accessible to all people. 
+              <li> You can also adjust the sizing of your image using: &lt img src="File" width="#" &gt; (You can use width, height or both!) </li></ol></p>
   <body>
     <nav>
-      <a href="page2.html">Previous Page!</a>
-      <a href="page4.html">Next Page!</a>
-    </nav>
-    <main>
-      <h2>Formatting Tags</h2>
-      <p>
-        HTML has two types of body elements: block-level elements and inline elements. 
-        <b><i>Block-level elements</i></b> will automatically appear on separate lines in your code, 
-        while <b><i>inline elements</i></b> appear horizontally so that the text does not start a new line. The following tags are examples of inline elements!
-      </p>
-      
-      <ul>
-        <li><b>&lt;b&gt;</b><b>this tag makes text appear bold </b> &lt;/b&gt;</li>
-        <li><b>&lt;strong&gt;</b><strong>this tag is similar to the bold tag and also makes text appear bold</strong> &lt;/strong&gt;</li>
-        <li><b>&lt;i&gt;</b> <i>this tag makes text appear italicized</i> &lt;/i&gt;</li>
-        <li><b>&lt;em&gt;</b> <em>this tag also makes text appear italicized</em> &lt;/em&gt;</li>
-        <li><b>&lt;mark&gt;</b> <mark>With this tag, text will appear highlighted</mark> &lt;/mark&gt;</li>
-        <li><b>&lt;small&gt;</b> <small>This tag makes text appear small</small> &lt;/small&gt;</li>
-        <li><b>&lt;del&gt;</b> <del>With this tag, text will appear crossed out</del> &lt;/del&gt;</li>
-        <li><b>&lt;ins&gt;</b> <ins>This tag makes text appear underlined</ins> &lt;/ins&gt;</li>
-        <li><b>&lt;sub&gt;</b> <sub>This tag makes text appear as a subscript</sub> &lt;/sub&gt; For example, H<sub>2</sub>O</li>
-        <li><b>&lt;sup&gt;</b> <sup>This tag makes text appear as a superscript</sup> &lt;/sup&gt;</li>
-      </ul>
-
-      <h3>Structural Tags</h3>
-      <p>There are also list elements <b>(block level elements)</b> which consist of:</p>
-      <ul>
-        <li>&lt;ol&gt; This tag creates an ordered list with numbers. However, the tag &lt;ul&gt; creates an unordered list with bullet points instead.</li>
-      </ul>
-      
-      <p><b>Note:</b> Remember to always put <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> first, followed by the <code>&lt;li&gt;</code> tag, or else your code will appear incorrect when passed through a validator and the bullet points/numbers you wanted will not appear.</p>
-
-      <p>If you are curious about what an unordered list would look like, look above! The list of formatting tags shows different tags using the <code>&lt;ul&gt;</code> tag. Below is an example of an ordered list.</p>
-      
-      <ol>
-        <li>This</li>
-        <li>Is</li>
-        <li>An</li>
-        <li>Ordered</li>
-        <li>List</li>
-      </ol>
-      
-      <p><b><i>The code would look something like the following...</i></b></p>
-
-      <pre><code>&lt;ol&gt;</code></pre>
-      <pre><code>&lt;li&gt; Hello &lt;/li&gt;</code></pre>
-      <pre><code>&lt;li&gt; World! &lt;/li&gt;</code></pre>
-      <pre><code>&lt;/ol&gt;</code></pre>
-
-      <p> <b> or...</b></p>
-      <pre><code>&lt;ul&gt;</code></pre>
-      <pre><code>&lt;li&gt; Hello &lt;/li&gt;</code></pre>
-      <pre><code>&lt;li&gt; World! &lt;/li&gt;</code></pre>
-      <pre><code>&lt;/ul&gt;</code></pre>
-      <h3>Semantic Tags</h3>
-    <p>Semantic tags are tags that describe their meaning to both the browser and the developer.</p>
-    <p><b>Here is a list of commonly used semantic tags in HTML:</b></p>
-    <ul>
-        <li><code>&lt;header&gt;</code> - Represents the first content of a page or a set of navigational links.</li>
-        <li><code>&lt;nav&gt;</code> - Used for navigation links.</li>
-        <li><code>&lt;main&gt;</code> - Represents the main content of the document.</li>
-        <li><code>&lt;footer&gt;</code> -  footer for a document or section.</li>
-        <li><code>&lt;article&gt;</code> - Represents a self-contained piece of content.</li>
-        <li><code>&lt;section&gt;</code> - grouping of content.</li>
-        <li><code>&lt;aside&gt;</code> - Represents content related to the main content</li>
-    </ul>
-
-      <a href="index.html">Return to Home Page</a>
-    </main>
-  </body>
-</html>
